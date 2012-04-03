@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Vim-gromacs by HubLot</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/HubLot/vim-gromacs">Fork Me on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Vim-gromacs</h1>
+            <h2>Plugin Vi for Gromacs</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/HubLot/vim-gromacs/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/HubLot/vim-gromacs/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+      <span class="banner-fix"></span>
+
+      <section id="main_content">
+        <h1>Vim-Gromacs</h1>
+
+<p>Vim-Gromacs is a plugin to easy manipulate Gromacs files in Vi/Vim.</p>
+
+<p>It contains a set of files to enable syntax highlighting for Gromacs files.
+For the moment, it works with mdp, gro, top/itp, xvg and ndx files.</p>
+
+<p>It contains also macros to comment/uncomment easily selections of a file and to jump to different sections (<em>[...]</em>) of a file.</p>
+
+<h2>Installation</h2>
+
+<ul>
+<li><strong>Manual Way</strong></li>
+</ul><p>Go to your ~/.vim directory.</p>
+
+<p>If <em>syntax</em>, <em>ftdetect</em> and <em>ftplugin</em> directories don't exist, copy them from github.
+If they are, copy only files inside. Otherwise, existing files will be replaced.</p>
+
+<ul>
+<li><strong>VimBall Way (Vim &gt;= 7.0)</strong></li>
+</ul><p>Get the vimball <em>gromacs.vba</em>:</p>
+
+<pre><code>$ wget --no-check-certificate <a href="https://raw.github.com/HubLot/vim-gromacs/master/gromacs.vba">https://raw.github.com/HubLot/vim-gromacs/master/gromacs.vba</a>
+</code></pre>
+
+<p>Open it with vi and type:</p>
+
+<pre><code>:so % 
+:q!
+</code></pre>
+
+<ul>
+<li><strong>OS Supported</strong></li>
+</ul><p>Vim-Gromacs has been tested on Ubuntu 8.04, 10.04 and 11.04, Debian Squeeze, Fedora 16 and Mac OS X.</p>
+
+<p>Please let us know if it's working on other distros.</p>
+
+<h2>Get Started</h2>
+
+<p>Syntax highlighting should be automatic.</p>
+
+<p>To use macros, you need to allow filetype plugins : "filetype plugin on" in your <em>.vimrc</em>.</p>
+
+<p>(If you want to have gromacs macros always allowed, move gromacs.vim from  <em>~/.vim/ftplugin</em> to <em>~/.vim/plugin</em>)</p>
+
+<h2>Usage</h2>
+
+<p>Shortcuts for the macros:</p>
+
+<ul>
+<li>]; -- Comment the selection</li>
+<li>]: -- Uncomment the selection</li>
+<li>], -- Jump to the next section</li>
+<li>]! -- Jump to the previous section</li>
+</ul><p>A section is defined by '[....]'</p>
+
+<h2>Authors</h2>
+
+<p><strong>Hubert Santuz</strong></p>
+
+<ul>
+<li><a href="https://github.com/HubLot">https://github.com/HubLot</a></li>
+<li><a href="https://twitter.com/hsantuz">https://twitter.com/hsantuz</a></li>
+</ul><p><strong>Jonathan Barnoud</strong></p>
+
+<ul>
+<li><a href="https://github.com/jbarnoud">https://github.com/jbarnoud</a></li>
+<li><a href="https://twitter.com/jbarnoud">https://twitter.com/jbarnoud</a></li>
+</ul><h2>Licence</h2>
+
+<p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.                                    </p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.                           </p>
+
+<p>A copy of the GNU General Public License is available at <a href="http://www.gnu.org/licenses/gpl-3.0.html">http://www.gnu.org/licenses/gpl-3.0.html</a>.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/HubLot">HubLot</a> can be found on <a href="https://github.com/HubLot/vim-gromacs">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
